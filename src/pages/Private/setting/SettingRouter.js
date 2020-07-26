@@ -12,6 +12,7 @@ function SettingRouter() {
         <Switch>
             <Route path="/setting/users" component={Users}/>
             <Route path="/setting/store" component={Store}/>
+            <Redirect to="/setting/users" />
         </Switch>
              
         </div>
