@@ -7,12 +7,14 @@ import Registrasi from './pages/registrasi/Registrasi';
 import Login from './pages/Login/Login';
 import lupaPassword from './pages/lupa-password/LupaPassword';
 import NotFound from './pages/404/NotFound';
+import PrivateRouter from './pages/Private/PrivateRouter';
 
 
 function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/setting" component={PrivateRouter}/>
         <Route path="/registrasi" component={Registrasi}/>
         <Route path="/login" component={Login}/>
         <Route path="/lupa-password" component={lupaPassword}/>
