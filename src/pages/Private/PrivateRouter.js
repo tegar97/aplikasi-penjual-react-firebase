@@ -8,7 +8,6 @@ import Home from './Home/Home'
 function PrivateRouter() {
     return (
             <Switch>
-
                 <Route path="/setting" component={SettingRouter}/>
                 <Route path="/product" component={ProdukRouter}/>
                 <Route path="/transactions" component={Transactions}/>
